@@ -19,7 +19,7 @@ T.get('search/tweets', params_jobs, function(err, data, response) {
       // -- GET USERNAME OF TWEET-ER
       var username = String(data.statuses[i].user.screen_name);
       var tweeturl  = ': twitter.com/' + username + '/statuses/' + data.statuses[i].id_str;
-      var retweetbody = 'This hour\'s random topic: ' + queryterm  +'\n Most recent tweet by @' + username + tweeturl;
+      var retweetbody = 'This hour\'s random topic: ' + queryterm  +'\nMost recent tweet by @' + username + tweeturl;
       T.post('statuses/update',{status:retweetbody},function(err,data){console.log(data.text)});
       T.post('favorites/create', {id: data.statuses[i].id_str}, function(err, response){});
     }
