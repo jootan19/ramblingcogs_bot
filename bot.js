@@ -24,7 +24,7 @@ T.get('search/tweets', params_jobs, function(err, data, response) {
       var tweeturl  = ': twitter.com/' + username + '/statuses/' + data.statuses[i].id_str;
       
       // -- FORMAT TWEET
-      var tweetfmtID = Math.floor(Math.random()*6);
+      var tweetfmtID = Math.floor(Math.random()*7);
       switch(tweetfmtID){
         case 0:
           retweetbody = queryterm  +' caught my attention\nCaught @' + username + '\'s attention too' + tweeturl;  
@@ -43,6 +43,9 @@ T.get('search/tweets', params_jobs, function(err, data, response) {
           break;
         case 5:
           retweetbody = queryterm  +' sounds interesting\n @' + username + ' recently tweeted about it' + tweeturl;  
+          break;
+        case 6:
+          retweetbody = 'Thinking '+  queryterm  +' thoughts together with \n@' + username + tweeturl;  
           break;
       }
       
