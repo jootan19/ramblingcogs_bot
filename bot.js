@@ -30,10 +30,10 @@ T.get('search/tweets', params_jobs, function(err, data, response) {
           retweetbody = queryterm  +' caught my attention\nCaught @' + username + '\'s attention too' + tweeturl;  
           break;
         case 1:
-          retweetbody = 'Who fancies a bit of '+  queryterm  +' ? \n@' + username + 'tweeted most recently about it' + tweeturl;  
+          retweetbody = 'Who fancies a bit of '+  queryterm  +' ? \n@' + username + ' tweeted most recently about it' + tweeturl;  
           break;
         case 2:
-          retweetbody = 'Thinking of '+  queryterm  +' now.\n@' + username + 'seems to be thinking of it too:' + tweeturl;  
+          retweetbody = 'Thinking of '+  queryterm  +' now.\n@' + username + ' seems to be thinking of it too:' + tweeturl;  
           break;
         case 3:
           retweetbody = 'hmmm...pondering ' + queryterm  +'...\nso is @' + username + tweeturl;  
