@@ -5,7 +5,7 @@ var T = new Twitter(config);
 var textArray = require('./termsrepo.js');
 var randomNumber = Math.floor(Math.random()*textArray.length);
 var queryterm = textArray[randomNumber]; 
-var query = queryterm + ' AND (neuroscience OR fmri OR EEG OR cognition OR neuroimaging OR psychology) -filter:retweets';
+var query = queryterm + ' AND (neuroscience OR fmri OR EEG OR cognition OR neuroimaging OR psychology OR TMS) -filter:retweets';
 
 var params_jobs = { 
   q: query,
@@ -25,7 +25,7 @@ T.get('search/tweets', params_jobs, function(err, data, response) {
     }
     
   }else{
-    var sadtweetbody = 'I feel sick..*ugh*...someone get help from @gnafuy...' ;
+    var sadtweetbody = 'I feel sick..*ugh*...someone pls get help from @gnafuy...' ;
     T.post('statuses/update',{status:sadtweetbody},function(err,data){console.log(data.text)});
   }});
               
