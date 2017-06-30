@@ -43,6 +43,7 @@ T.get('search/tweets', params_jobs, function(err, data, response) {
           break;
       }
       
+      
       T.post('statuses/update',{status:retweetbody},function(err,data){console.log(data.text)});
       T.post('favorites/create', {id: data.statuses[i].id_str}, function(err, response){});
     }
