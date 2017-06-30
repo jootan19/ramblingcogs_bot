@@ -4,7 +4,9 @@ var textArray = [
     '"Altruism"',
     '"Attention"',
     '"Audiovisual"',
+    '"Auditory illusion"',
     '"Autism"',
+    '"Awareness"',
     '"Bayesian"',
     '"Behaviour"',
     '"Behavior"',
@@ -28,6 +30,7 @@ var textArray = [
     '"Motion"',
     '"Neural network"',
     '"Perception"',
+    '"Phi"',
     '"Predictive coding"',
     '"Priming"',
     '"Schizophrenia"',
@@ -36,6 +39,7 @@ var textArray = [
     '"Spatial memory"',
     '"Theory-of-mind"',
     '"Vision"',
+    '"Visual illusion"',
     '"Working memory"'
 ];
   

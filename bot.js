@@ -27,25 +27,25 @@ T.get('search/tweets', params_jobs, function(err, data, response) {
       var tweetfmtID = Math.floor(Math.random()*7);
       switch(tweetfmtID){
         case 0:
-          retweetbody = queryterm  +' caught my attention\nCaught @' + username + '\'s attention too' + tweeturl;  
+          retweetbody = queryterm  +' caught my attention\nCaught @' + username + '\'s attention too #cogneuro' + tweeturl;  
           break;
         case 1:
-          retweetbody = 'Who fancies a bit of '+  queryterm  +' ? \n@' + username + ' tweeted most recently about it' + tweeturl;  
+          retweetbody = 'Who fancies a bit of '+  queryterm  +' ? \n@' + username + ' tweeted most recently about it #cogneuro' + tweeturl;  
           break;
         case 2:
-          retweetbody = 'Thinking of '+  queryterm  +' now.\n@' + username + ' seems to be thinking of it too:' + tweeturl;  
+          retweetbody = 'Thinking of '+  queryterm  +' now.\n@' + username + ' seems to be thinking of it too #cogneuro' + tweeturl;  
           break;
         case 3:
-          retweetbody = 'hmmm...pondering ' + queryterm  +'...\nso is @' + username + tweeturl;  
+          retweetbody = 'hmmm...pondering ' + queryterm  +'...\nso is @' + username + ' #cogneuro' +tweeturl;  
           break;
         case 4:
-          retweetbody = queryterm  +' is thought provoking no?\n @' + username + ' thought about it too' + tweeturl;  
+          retweetbody = queryterm  +' is thought provoking no?\n @' + username + ' thought about it too #cogneuro' + tweeturl;  
           break;
         case 5:
-          retweetbody = queryterm  +' sounds interesting\n @' + username + ' recently tweeted about it' + tweeturl;  
+          retweetbody = queryterm  +' sounds interesting\n @' + username + ' recently tweeted about it #cogneuro' + tweeturl;  
           break;
         case 6:
-          retweetbody = 'Thinking '+  queryterm  +' thoughts together with \n@' + username + tweeturl;  
+          retweetbody = 'Thinking '+  queryterm  +' thoughts together with \n@' + username + '#cogneuro' + tweeturl;  
           break;
       }
       
