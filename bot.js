@@ -24,10 +24,10 @@ T.get('search/tweets', params_jobs, function(err, data, response) {
       var tweeturl  = ': twitter.com/' + username + '/statuses/' + data.statuses[i].id_str;
       
       // -- FORMAT TWEET
-      var tweetfmtID = Math.floor(Math.random()*5);
+      var tweetfmtID = Math.floor(Math.random()*6);
       switch(tweetfmtID){
         case 0:
-          retweetbody = queryterm  +' caught my attention\nCaught @' + username + '\s attention too' + tweeturl;  
+          retweetbody = queryterm  +' caught my attention\nCaught @' + username + '\'s attention too' + tweeturl;  
           break;
         case 1:
           retweetbody = 'Who fancies a bit of '+  queryterm  +' ? \n@' + username + 'tweeted most recently about it' + tweeturl;  
@@ -40,6 +40,9 @@ T.get('search/tweets', params_jobs, function(err, data, response) {
           break;
         case 4:
           retweetbody = queryterm  +' is thought provoking no?\n @' + username + ' thought about it too' + tweeturl;  
+          break;
+        case 5:
+          retweetbody = queryterm  +' sounds interesting\n @' + username + ' recently tweeted about it' + tweeturl;  
           break;
       }
       
