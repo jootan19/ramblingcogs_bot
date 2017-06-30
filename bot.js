@@ -27,19 +27,19 @@ T.get('search/tweets', params_jobs, function(err, data, response) {
       var tweetfmtID = Math.floor(Math.random()*5);
       switch(tweetfmtID){
         case 0:
-          let retweetbody = queryterm  +' has caught my attention\nMost recent tweet by @' + username + tweeturl;  
+          retweetbody = queryterm  +' has caught my attention\nMost recent tweet by @' + username + tweeturl;  
           break;
         case 1:
-          let retweetbody = 'Who fancies a bit of '+  queryterm  +' ? \n@' + username + 'tweeted most recently about it' + tweeturl;  
+          retweetbody = 'Who fancies a bit of '+  queryterm  +' ? \n@' + username + 'tweeted most recently about it' + tweeturl;  
           break;
         case 2:
-          let retweetbody = 'Thinking of '+  queryterm  +' now.\n@' + username + 'seems to be thinking of it too:' + tweeturl;  
+          retweetbody = 'Thinking of '+  queryterm  +' now.\n@' + username + 'seems to be thinking of it too:' + tweeturl;  
           break;
         case 3:
-          let retweetbody = 'hmmm...pondering' + queryterm  +'...\nso is @' + username + tweeturl;  
+          retweetbody = 'hmmm...pondering' + queryterm  +'...\nso is @' + username + tweeturl;  
           break;
         case 4:
-          let retweetbody = queryterm  +' is thought provoking no?\n @' + username + ' thought about it too' + tweeturl;  
+          retweetbody = queryterm  +' is thought provoking no?\n @' + username + ' thought about it too' + tweeturl;  
           break;
       }
       
