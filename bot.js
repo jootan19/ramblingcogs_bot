@@ -24,7 +24,7 @@ T.get('search/tweets', params_jobs, function(err, data, response) {
       var tweeturl  = ': twitter.com/' + username + '/statuses/' + data.statuses[i].id_str;
       
       // -- FORMAT TWEET
-      var tweetfmtID = Math.floor(Math.random()*7);
+      var tweetfmtID = Math.floor(Math.random()*9);
       switch(tweetfmtID){
         case 0:
           retweetbody = queryterm  +' caught my attention\nCaught @' + username + '\'s attention too #cogneuro' + tweeturl;  
@@ -45,7 +45,13 @@ T.get('search/tweets', params_jobs, function(err, data, response) {
           retweetbody = queryterm  +' sounds interesting\n @' + username + ' recently tweeted about it #cogneuro' + tweeturl;  
           break;
         case 6:
-          retweetbody = 'Thinking '+  queryterm  +' thoughts together with \n@' + username + '#cogneuro' + tweeturl;  
+          retweetbody = 'Thinking '+  queryterm  +' thoughts together with \n@' + username + ' #cogneuro' + tweeturl;  
+          break;
+        case 7:
+          retweetbody = 'Let\'s talk '+  queryterm  +' together with \n@' + username + ' #cogneuro' + tweeturl;  
+          break;
+        case 8:
+          retweetbody = 'I\'m feelin\' like a bit of '+  queryterm  +'\nseems like @' + username + ' is too #cogneuro' + tweeturl;  
           break;
       }
       
